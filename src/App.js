@@ -1,11 +1,14 @@
 import React from 'react';
 import Button from './components/Button';
 import Product from './components/Product';
+import Tile from "./components/Tile";
 import './App.css';
 import handyBag from './assets/bag_1.png';
 import stylishBag from './assets/bag_2.png';
 import simpleBag from './assets/bag_3.png';
 import trendyBag from './assets/bag_4.png';
+import brand from './assets/brand.png';
+import ourStory from './assets/our_story.png';
 
 
 function App() {
@@ -52,12 +55,30 @@ function App() {
               title="The trendy bag"
               price="150,-"
           />
-
-
-
       </main>
 
-      </>
+      <footer>
+          <Tile
+              title="The Brand"
+              paragraph="Lorem ipsum"
+          />
+
+          <Tile
+              img={brand}
+              imageDescription="brandLogo"
+          />
+
+          <Tile
+              img={ourStory}
+              imageDescription="story"
+          />
+
+          <Tile
+              title="Our Story"
+              paragraph="Lorem ipsum"
+          />
+      </footer>
+    </>
   );
 }
 
